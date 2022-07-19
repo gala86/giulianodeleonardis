@@ -1,0 +1,87 @@
+/*
+Convención al trabajar con CSS
+- Cuando estoy agregando estilos, por buenas prácticas, yo los acomodo en relación a ciertos temas.
+1ero. Posicionamiento 
+    Coloco todos los estilos en relación al posicionamiento
+    position (absolute, relative...)
+2do. Modelo caja (box model)
+    Ya que tengo todo posicionado empiezo a colocar todo lo que tiene que ver con el modelo de caja.
+    margin, padding, height, witdh. 
+3ero. Tipografía 
+    Tipografía (fuentes, tamaño de fuentes, peso de la fuente, tipo de fuente).
+4to. Visuales
+    Todos los estilos que tengan que ver con estilos visuales (sombras, esquinas... efectos visuales).
+5to. Otros 
+    Otros o miscelaneos
+*/
+
+:root {
+    /*Colores*/
+    --green: #00DB1E;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #0003bb;
+    --soft-blue: #E7F5FF;
+    --warm-black: #201E1C;
+    --black: #282623;
+    --gray: #bababa;
+    --off-white: #FAF8F7;
+    --just-white: #FFF;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+/*Menu*/
+.header-menu {
+    display: flex;
+    list-style-type: none;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--warm-black);
+  }
+  
+  .header-menu li {
+    float: left;
+    margin-left: 10px;
+  }
+  
+  .header-menu li a {
+    display: block;
+    color: var(--just-white);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 9.7px 20px;
+    text-decoration: none;
+  }
+  
+  .header-menu li a:hover {
+    background-color: var(--gray);
+    color: var(--black);
+    font-weight: bold;
+  }
+/*Cards*/
+.main-profile__interest-cards, 
+.main-profile__jobExperience, 
+.main-profile__education,
+.main-profile__personalProjects,
+.main-profile__skills,
+.main-profile__technicalSkills,
+.main-profile__languages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+/*Slider*/
+.contact__container-slider {
+    justify-content: center;
+}

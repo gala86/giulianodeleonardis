@@ -1,0 +1,418 @@
+/*
+Convención al trabajar con CSS
+- Cuando estoy agregando estilos, por buenas prácticas, yo los acomodo en relación a ciertos temas.
+1ero. Posicionamiento 
+    Coloco todos los estilos en relación al posicionamiento
+    position (absolute, relative...)
+2do. Modelo caja (box model)
+    Ya que tengo todo posicionado empiezo a colocar todo lo que tiene que ver con el modelo de caja.
+    margin, padding, height, witdh. 
+3ero. Tipografía 
+    Tipografía (fuentes, tamaño de fuentes, peso de la fuente, tipo de fuente).
+4to. Visuales
+    Todos los estilos que tengan que ver con estilos visuales (sombras, esquinas... efectos visuales).
+5to. Otros 
+    Otros o miscelaneos
+*/
+
+:root {
+  /*Colores*/
+  --green: #00db1e;
+  --soft-orange: #ffe9d5;
+  --secondary-blue: #0003bb;
+  --soft-blue: #e7f5ff;
+  --warm-black: #201e1c;
+  --black: #282623;
+  --gray: #bababa;
+  --off-white: #faf8f7;
+  --just-white: #fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  font-family: "DM Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+/* Unvisited link */
+a:link {
+  color: var(--just-white);
+}
+/* Visited link */
+a:visited {
+  color: var(--green);
+}
+/* Mouse over link */
+a:hover {
+  color: yellow;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+/* Selected link */
+a:active {
+  color: red;
+}
+header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 334px;
+  text-align: center;
+  background: linear-gradient(0deg, #201e1c 12%, var(--green) 100%);
+}
+/*Menu*/
+.header-menu {
+  display: none;
+}
+/*Menu*/
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--warm-black);
+}
+.footer-menu li {
+  float: left;
+  margin-left: 10px;
+}
+.footer-menu li a {
+  display: block;
+  color: var(--just-white);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 9.7px 20px;
+  text-decoration: none;
+}
+.footer-menu li a:hover {
+  background-color: var(--gray);
+  color: var(--black);
+  font-weight: bold;
+}
+header img {
+  width: 150px;
+  height: auto;
+  align-self: center;
+  margin-top: 30px;
+}
+.header__title-container {
+  width: 90%;
+  min-width: 288px; /*Es el 90% de 320px*/
+  max-width: 900px;
+  height: 288px;
+  margin-top: 20px;
+  text-align: center;
+  align-self: center;
+}
+/*My name*/
+.header__title-container h1 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--just-white);
+}
+/*Slogan*/
+.header__title-container p {
+  margin-top: 15px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--soft-orange);
+}
+/*Button*/
+.header__title-container .header--button {
+  position: absolute;
+  left: calc(50% - 115px);
+  top: calc(334px - 24px);
+  display: block;
+  padding: 15px;
+  width: 229px;
+  height: 48px;
+  background: var(--off-white);
+  /*Sombra*/
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--black);
+}
+.header--button span {
+  display: inline-block;
+  width: 13px;
+  height: 8px;
+  margin-left: 10px;
+  background-image: url("./assets/icons/down-arrow.svg");
+}
+/*Main container*/
+main {
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--off-white);
+}
+/*Profile container*/
+.main-profile {
+  width: 100%;
+  height: auto;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+.main-profile__title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+/*My message*/
+.main-profile h2 {
+  margin-bottom: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+.main-profile p {
+  margin-bottom: 30px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  color: #565656;
+}
+.main-profile__jobExperience .dif-paragraph {
+  font-style: italic;
+  color: var(--off-white);
+  font-weight: 100;
+}
+/*Icons*/
+.main-profile--icon {
+  margin-top: 5px;
+  color: var(--secondary-blue);
+}
+.main-profile__subtitle {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--black);
+}
+/*Tags*/
+.main-profile__jobExperience h2,
+.main-profile__education h2,
+.main-profile__personalProjects h2,
+.main-profile__skills h2,
+.main-profile__technicalSkills h2,
+.main-profile__languages h2,
+.main-profile__interest h2 {
+  margin: 0;
+  width: 100%;
+  background-color: #104114;
+  color: var(--off-white);
+}
+/*Areas container*/
+.main-profile__languages {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+}
+/*Job Experience container*/
+.main-profile__jobExperience {
+  background-color: #cfd7df;
+}
+/*Personal Projects container*/
+.main-profile__personalProjects {
+  background-color: #cfd7df;
+}
+/*Technical Skills container*/
+.main-profile__technicalSkills {
+  background-color: #cfd7df;
+}
+/*Interest container*/
+.main-profile__interest {
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  background-color: #cfd7df;
+}
+/*Cards*/
+.cards--card-title {
+  width: 90%;
+  min-width: 220px;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+  text-align: center;
+  background-color: transparent;
+}
+.cards--card {
+  width: 90%;
+  min-width: 288px;
+  max-width: 350px;
+  min-height: 210px;
+  height: auto;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--black);
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.cards--card .cards--card-title {
+  margin-bottom: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color: var(--just-white);
+}
+.cards--card .cards--card-body {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+  font-weight: 100;
+  line-height: 1.8rem;
+  color: #b1b1b1;
+  background-color: transparent;
+}
+/*Education cards*/
+.main-profile__education .cards--card {
+  min-height: 180px;
+}
+/*Job Experience*/
+.main-profile__jobExperience .body-card {
+  background-color: transparent;
+}
+/*Personal Projects*/
+.main-profile__personalProjects .body-card {
+  background-color: transparent;
+}
+/*Skill cards*/
+.main-profile__skills .cards--card {
+  min-height: 10px;
+}
+.main-profile__skills .cards--card-body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--just-white);
+}
+/*Technical Skill cards*/
+.main-profile__technicalSkills .cards--card {
+  min-height: 10px;
+}
+.main-profile__technicalSkills .cards--card-body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--just-white);
+  background-color: transparent;
+}
+.main-profile__technicalSkills .cards--description {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #b1b1b1;
+  background-color: transparent;
+}
+/*Language cards*/
+.main-profile__languages .cards--card {
+  min-height: 10px;
+}
+.main-profile__languages .cards--card-body {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--just-white);
+}
+.main-profile__languages .cards--description {
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #b1b1b1;
+}
+/*Interests cards*/
+.main-profile__interest-cards .cards--card {
+  min-height: 120px;
+}
+.main-profile__endLine {
+  height: 26px;
+  margin: 0;
+  width: 100%;
+  background-color: #104114;
+  border: 0;
+}
+/*Contact section*/
+.contact-container-container {
+  width: 100%;
+  min-width: 320px;
+  text-align: center;
+}
+.contact-container__title {
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.contact-container__title h2 {
+  padding-top: 50px;
+  font-size: 2.4rem;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+/*Slider*/
+.contact-container__container-slider {
+  display: flex;
+  justify-content: center;
+  height: 316px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+.contact-container__container-card {
+  position: relative;
+  scroll-snap-align: center;
+  width: 70%;
+  min-width: 190px;
+  max-width: 220px;
+  height: 150px;
+  margin: 50px 5px 0;
+  background-color: var(--just-white);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(89, 73, 30, 0.3);
+}
+.contact-container__icon {
+  position: absolute;
+  width: 96px;
+  height: auto;
+  left: calc(50% - 48px);
+  top: calc(60% - 48px);
+}
+.contact-container__card-title {
+  width: 100%;
+  height: 30px;
+  padding: 6px;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  background-color: var(--black);
+  border-radius: 8px 8px 0 0;
+  color: var(--just-white);
+  text-shadow: 0.5px 0.5px var(--gray);
+}
+/*Footer section*/
+footer {
+  display: flex;
+  width: 100%;
+  background: linear-gradient(360deg, #201e1c 12%, var(--green) 100%);
+}

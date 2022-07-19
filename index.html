@@ -1,17 +1,383 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 600px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap"
+        rel="stylesheet">
     <title>Giuliano De Leonardis</title>
 </head>
-<body>
-    <h1>Probando ando</h1>
-    <h2>Párrafo de prueba</h2>
-    <p>
-        ¡Hola, que tal!
-    </p>
 
+<body>
+    <header>
+        <menu class="header-menu">
+            <li><a class="active" href="#home">Home</a></li>
+          </menu>
+        <img src="/assets/img/myLogo.png" alt="main-logo">
+        <div class="header__title-container">
+            <h1>
+                Giuliano Antonio De Leonardis Álvarez
+            </h1>
+            <p>
+                A strong believer of growth through education
+            </p>
+            <a href="#contact" class="header--button">Contact to me 🙂<span></span></a>
+        </div>
+    </header>
+    <main>
+        <section class="main-profile">
+            <div class="main-profile__title">
+                <h2>Education with the correct information can change your life 100%, that's why I never stop to
+                    study</h2>
+                <p>In this section you can see all my studies and my work experience.</p>
+            </div>
+            <!--Work Experience Section-->
+            <section class="main-profile__jobExperience">
+                <h2>WORK EXPERIENCE</h2>
+                <div class="main-profile__jobExperience main-profile--icon">
+                    <span class="material-icons">work</span>
+                </div>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">IT tech (university Internship)</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body"><span>I worked in the IT department of
+                                "Santa María" university, giving support to the other departments.
+                                Installing new networks and new computers.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">Telecommunication (internship job)</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body"><span>I worked in 123.com.ve company as
+                                an intern. I developed a manual with the basic processes to be
+                                executed in the softswitch (NexTone MSX).</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">Automotive technician (father's company)
+                    </p>
+                    <p class="dif-paragraph">Here ☝🏻 I decided to change my north</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body"><span>I worked eight years as an automotive
+                                technician in GUILIAN CA workshop, especially in the electronic parts
+                                of vehicles.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">Copywriting (freelancer)</p>
+                    <p class="dif-paragraph">Here ☝🏻 the world situation changed my north again</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body">
+                            <span>Since the second semester of 2020 I started to work as a copywriter on Workana (here
+                                is my profile:<br><br>
+                                <a href="www.workana.com/freelancer/465ff552aee903223b996850970799eb">Giuliano at
+                                    Workana</a>
+                            </span>
+                        </p>
+                    </div>
+                </article>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">Frontend assistant</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body"><span>In the last semester of 2020 I
+                                worked making web pages, editing photos on Photoshop, automating with Excel and Visual Basic coding the copywrite of the pages. All this I did it on Wordress for this site:<br><br>
+                                <a href= "https://sellhousefast.com/">Sell Your House Fast</a>
+                            </span>
+                        </p>
+                    </div>
+                </article>
+                <article class="main-profile__jobExperience cards--card">
+                    <p class="main-profile__jobExperience cards--card-title">COO & CTO</p>
+                    <div class="main-profile__jobExperience body-card">
+                        <p class="main-profile__jobExperience cards--card-body"><span>I started as a seller at ICREA
+                                institute through WhatsApp. <br>
+                                Then, in 2022, I changed to the actual position. <br>
+                                I created all the platform in the institute for manage everything related with the particular online lessons; based on Google Sheets and JavaScrip (and some
+                                HTML and CSS).</span></p>
+                    </div>
+                </article>
+            </section>
+            <!--My Education Section-->
+            <section class="main-profile__education">
+                <h2>EDUCATION</h2>
+                <div class="main-profile__education main-profile--icon">
+                    <span class="material-icons">school</span>
+                </div>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Telecommunications Engineer</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>This is my major study.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Cisco CCNA</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>CCNA covers networking fundamentals, IP services, security fundamentals, automation and programmability.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Cisco IT Essentials (PC Hardware and Software)
+                    </p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>Skills and procedures to install, configure, and troubleshoot computers, mobile devices, and software.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Electronic Technology - UPET</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>Basic knowledges about electricity, analogue and digital electronic.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Automotive Technician - Autotechnology</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>Here ☝🏻 I decided to learn new things
+                                for ambition</span><br><br>
+                            I learned all about car's systems.     
+                        </p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">HTML, CSS and JavaScript</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>I decided to continue to develop this
+                                area because I like technology and
+                                this tools are going to help me with personal projects.
+                            </span><br>
+                            I continue my learning process at Platzi.com 
+                        </p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Sport physiology</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>I decided to learn this at <a href="https://www.institutoisaf.es/">ISAF Institute</a> because the
+                                health is one of my life values; and I am a co-founder of an startup in this area, mixing Training and Technology.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__education cards--card">
+                    <p class="main-profile__education cards--card-title">Yoga Instructor</p>
+                    <div class="main-profile__education body-card">
+                        <p class="main-profile__education cards--card-body"><span>I am still studying at <a href="https://www.institutoisaf.es/">ISAF Institute</a>...</span></p>
+                    </div>
+                </article>
+            </section>
+            <!--Personal Projects Section-->
+            <section class="main-profile__personalProjects">
+                <h2>PERSONAL PROJECTS</h2>
+                <div class="main-profile__personalProjects main-profile--icon">
+                    <span class="material-icons">lightbulb</span>
+                </div>
+
+                <article class="main-profile__personalProjects cards--card">
+                    <p class="main-profile__personalProjects cards--card-title">Create an electronic car workshop</p>
+                    <div class="main-profile__personalProjects body-card">
+                        <p class="main-profile__personalProjects cards--card-body"><span>I studied all the things
+                                related with ECU (Engine Computer Unit) because I was working in that
+                                area.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__personalProjects cards--card">
+                    <p class="main-profile__personalProjects cards--card-title">Webpage "Hecho en Venezuela"</p>
+                    <div class="main-profile__personalProjects body-card">
+                        <p class="main-profile__personalProjects cards--card-body"><span>In 2013 I developed a web
+                                project for estimulate the production made in Venezuela. I participate
+                                in a competition of the Simón Bolivar university, and I made the 4th place.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__personalProjects cards--card">
+                    <p class="main-profile__personalProjects cards--card-title">Creation of a bread businees</p>
+                    <div class="main-profile__personalProjects body-card">
+                        <p class="main-profile__personalProjects cards--card-body"><span>In 2015, with my intention of
+                                create a business, I studied bakery with the goal of create an
+                                online and delivery bakery with my two brothers.</span></p>
+                    </div>
+                </article>
+                <article class="main-profile__personalProjects cards--card">
+                    <p class="main-profile__personalProjects cards--card-title">Personal training online</p>
+                    <div class="main-profile__personalProjects body-card">
+                        <p class="main-profile__personalProjects cards--card-body"><span>At the end of 2021 we (my wife,
+                                brother in law and I) are creating a product/service for guide
+                                the people to train in the correct way, with the goal of improve their health; in an
+                                online
+                                mode with a webapp.</span></p>
+                    </div>
+                </article>
+            </section>
+            <!--General Skills Section-->
+            <section class="main-profile__skills">
+                <h2>SKILLS</h2>
+                <div class="main-profile__skills main-profile--icon">
+                    <span class='material-icons'>account_circle</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Presentation & Public Speaking</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Active Listening</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Perseverance</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Teamwork</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Written & Oral Communication</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Creativity</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__skills cards--card-body">Problem Solving</span>
+                </div>
+            </section>
+            <!--Technical Skills Section-->
+            <section class="main-profile__technicalSkills">
+                <h2>TECHNICAL SKILLS</h2>
+                <div class="main-profile__technicalSkills main-profile--icon">
+                    <span class="material-icons">settings_applications</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__technicalSkills cards--card-body">Graphics<br><br>
+                        <span class="main-profile__technicalSkills cards--description">
+                            Photoshop (basic level).
+                        </span>
+                    </span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__technicalSkills cards--card-body">Platforms<br><br>
+                        <span class="main-profile__technicalSkills cards--description">
+                            Windows system, Microsoft Office, Google Drive/Docs/Sheets, Google Cloud Platform Projects, Google Data Studio, WordPress, Github. 
+                        </span>
+                    </span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__technicalSkills cards--card-body">Web development<br><br>
+                        <span class="main-profile__technicalSkills cards--description">
+                            HTML, CSS and JavaScript.
+                        </span>
+                    </span>
+                </div>
+            </section>
+            <!--Languages Section-->
+            <section class="main-profile__languages">
+                <h2>LANGUAGES</h2>
+                <div class="main-profile__languages main-profile--icon">
+                    <span class="material-icons">language</span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__languages cards--card-body">English<br><br>
+                        <span class="main-profile__languages cards--description">B1 (learning and practicing)
+                        </span>
+                    </span>
+                </div>
+                <div class="cards--card">
+                    <span class="main-profile__languages cards--card-body">Italian<br><br>
+                        <span class="main-profile__languages cards--description"> B2 (learning and practicing)
+                        </span>
+                    </span>
+                </div>
+                <div class="cards--card"><span class="main-profile__languages cards--card-body">Portuguese<br><br>
+                        <span class="main-profile__languages cards--description">A1 (learning and practicing)
+                        </span>
+                    </span>
+                </div>
+                <div class="cards--card"><span class="main-profile__languages cards--card-body">Spanish<br><br>
+                        <span class="main-profile__languages cards--description">Mother Tongue or L1
+                        </span>
+                    </span>
+                </div>
+            </section>
+            <!--Interests Section-->
+            <section class="main-profile__interest">
+                <h2>INTERESTS</h2>
+                <div class="main-profile--icon">
+                    <span class="material-icons">interests</span>
+                </div>
+                <section class="main-profile__interest-cards">
+                    <article class="cards--card">
+                        <p class="cards--card-title">Technology</p>
+                        <p class="cards--card-body">Coding</p>
+                    </article>
+                    <article class="interest cards--card">
+                        <p class="cards--card-title">Health</p>
+                        <p class="cards--card-body">Mind and body</p>
+                    </article>
+                    <article class="interest cards--card">
+                        <p class="cards--card-title">Tennis</p>
+                        <p class="cards--card-body">To play and wathc it (when I have time to)</p>
+                    </article>
+                    <article class="interest cards--card">
+                        <p class="cards--card-title">Personal growth</p>
+                        <p class="cards--card-body">Learning from differents sources and apply to me those knowledges. I
+                            have to live with me in the better form, and then, I have to live with others in the better
+                            form
+                            too.</p>
+                    </article>
+                    <article class="interest cards--card">
+                        <p class="cards--card-title">To study</p>
+                        <p class="cards--card-body">Making courses, watching videos and reading digital articles and
+                            physycal books. I love to do this because one of my goals is to become in my better version.
+                        </p>
+                    </article>
+                    <article class="interest cards--card">
+                        <p class="cards--card-title">Languages</p>
+                        <p class="cards--card-body">I love the languages, because open the mind and alow you too see
+                            the
+                            world in differents ways.</p>
+                    </article>
+                </section>
+            </section>
+            <hr class="main-profile__endLine">
+        </section>
+        <!--My network cards-->
+        <section id="contact" class="contact-container">
+            <div class="contact-container__title">
+                <h2>Meet me in the differents platforms</h2>
+            </div>
+            <section class="contact-container__container-slider">
+                <article id="linkedin-card" class="contact-container__container-card">
+                    <p class="contact-container__card-title">Linkedin</p>
+                    <div class="contact-container__body-card">
+                        <p class="contact-container__icon"><span><a href="https://www.linkedin.com/in/giuliano-de-leonardis/" target="_blank"><img src="./assets/icons/linkedin.png"></a></span></p>
+                    </div>
+                </article>
+                <article class="contact-container__container-card">
+                    <p class="contact-container__card-title">Instagram</p>
+                    <div>
+                        <p class="contact-container__icon"><span><a href="https://www.instagram.com/sonogala/" target="_blank"><img src="./assets/icons/instagram.png"></a></span></p>
+                    </div>
+                </article>
+                <article class="contact-container__container-card">
+                    <p class="contact-container__card-title">Platzi</p>
+                    <div>
+                        <p class="contact-container__icon"><span><a href="https://platzi.com/p/Giuliano/" target="_blank"><img src="./assets/icons/platzi.png"></a></span></p>
+                    </div>
+                </article>
+                <article class="contact-container__container-card">
+                    <p class="contact-container__card-title">Facebook</p>
+                    <div>
+                        <p class="contact-container__icon"><span><a href="https://www.facebook.com/giuliano.deleonardis/" target="_blank"><img src="./assets/icons/facebook.png"></a></span></p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section></section>
+    </main>
+    <footer>
+        <menu class="footer-menu">
+            <li><a class="active" href="#home">Home</a></li>
+          </menu>
+    </footer>
 </body>
+
 </html>
