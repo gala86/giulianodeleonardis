@@ -373,7 +373,6 @@ main {
 /*Slider*/
 .contact-container__container-slider {
   display: flex;
-  justify-content: center;
   height: 316px;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
